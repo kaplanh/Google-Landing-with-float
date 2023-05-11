@@ -136,3 +136,11 @@ ul li a:hover {
 .footer__butonlar--sag {
   float: right;
 }
+
+/* *Not:BEM, 
+CSS sınıflarını yazmak için bir adlandırma kuralıdır. Büyük ölçüde kullanılan bir yaklaşım olup, bakımı kolay ve ölçeklenebilir CSS kodu yazmak için önerilir.
+BEM yöntemi, her CSS sınıfının üç parçaya ayrılması gerektiğini önerir:
+Block: Sayfadaki bağımsız bir varlığı temsil eden üst düzey bileşen. Blokların örnekleri arasında başlık, altbilgi, menü, form vb. yer alır.
+Element: Bloktaki daha küçük parça, blok olmadan var olamaz. Elementler, sınıf adındaki çift alt çizgi (__) simgesiyle tanımlanır. Örnekler arasında formdaki bir düğme, menüdeki bir liste öğesi vb. yer alır.
+Modifier: Bir blok veya elemanın değişkeni. Değiştiriciler, sınıf adındaki çift tire (--) simgesiyle tanımlanır. Örnekler arasında devre dışı bırakılmış bir düğme, seçilmiş bir liste öğesi vb. yer alır.
+BEM kullanarak, geliştiriciler daha modüler ve yeniden kullanılabilir CSS kodu yazabilirler. Bu, özgünlük sorunlarını azaltarak kodu zamanla daha kolay bakım ve genişletme açısından daha kolay hale getirebilir. */
