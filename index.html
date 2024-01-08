@@ -64,8 +64,8 @@
                 <input
                     class="main__search-bar--input"
                     type="search"
-                    name=""
-                    id=""
+                    name="form-search"
+                    id="form-search"
                 />
                 <img
                     class="main__search-bar--mic"
@@ -74,7 +74,7 @@
                 />
             </div>
             <div class="">
-                <button class="main__buttons">Google Search</button>
+                <button class="main__buttons" id="searchBtn">Google Search</button>
                 <button class="main__buttons">I'am Feeling Lucy</button>
             </div>
             <div class="main__language">
@@ -115,5 +115,16 @@
                 
             </div>
         </footer>
+
+        <script>
+            let query = document.querySelector("#form-search");
+            let searchBtn = document.querySelector("#searchBtn");
+            searchBtn.onclick = function (e) {
+                e.preventDefault();
+                let url = "https://www.google.com/search?q=" + query.value;
+                window.open(url, "_self");
+                query.value = "";
+            };
+        </script>
     </body>
 </html>
