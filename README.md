@@ -1,8 +1,8 @@
-# Google-Landing-with-float
+# Google Landing Page with float
 
 [Click Me!](https://kaplanh.github.io/Google-Landing-with-float/)
 
-![google-Landing](![google landing page](https://github.com/kaplanh/Google-Landing-with-float/assets/101884444/81346c06-5d7f-423c-8ed5-57c690621a3c))
+![google-Landing-Page](https://github.com/kaplanh/Google-Landing-with-float/assets/101884444/81346c06-5d7f-423c-8ed5-57c690621a3c)
 
 ## Project-003 : Google Landing Page
 
