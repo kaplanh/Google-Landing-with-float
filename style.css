@@ -42,7 +42,20 @@ body {
 .header__link--appicon:hover {
     opacity: 1;
 }
-.header__link--button {
+
+.header__link--avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.header__link--avatar:hover {
+    width: 34px;
+    height: 34px;
+    background-color: #d3d3d3;
+}
+
+/* .header__link--button {
     width: 70px;
     height: 30px;
     background-color: #498af4;
@@ -51,7 +64,7 @@ body {
     border: none;
     cursor: pointer;
     font-weight: 600;
-}
+} */
 
 /*? Main */
 
