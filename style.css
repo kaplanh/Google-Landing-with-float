@@ -1,146 +1,172 @@
-/** Resetting */
+/*? Resetting */
+
 * {
-  box-sizing: border-box;
-  margin: 0;
-  text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* !HEADER */
+/*? Header */
 
 .header {
-  padding: 20px;
-  line-height: 36px;
+    padding: 20px;
+    line-height: 27px;
 }
 
-.header__sag {
-  float: left;
+.header__left {
+    float: left;
+}
+.header__right {
+    float: right;
+}
+.header__item {
+    display: inline;
+}
+.header__link {
+    color: black;
+    padding: 0.5rem;
+    opacity: 0.7;
+    text-decoration: none;
+}
+.header__link:hover {
+    text-decoration: underline;
+}
+.header__link--appicon {
+    opacity: 0.7;
+    vertical-align: middle;
+}
+.header__link--appicon:hover {
+    opacity: 1;
+}
+.header__link--button {
+    width: 70px;
+    height: 30px;
+    background-color: #498af4;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
 }
 
-.header__sol {
-  float: right;
-}
-ul li {
-  display: inline-block;
-}
-ul li a {
-  color: black;
-  padding: 0.7rem;
-  opacity: 0.7;
-}
+/*? Main */
 
-ul li a:hover {
-  text-decoration: underline;
-  opacity: 1;
-}
-.header__sag--appicon {
-  vertical-align: middle; /*https://www.w3schools.com/cssref/tryit.php?filename=trycss_vertical-align*/
-  width: 50px;
-  opacity: 0.7;
-}
-.header__sag--buton {
-  background-color: #4285f4;
-  color: white;
-  border: none;
-  width: 100px;
-  height: 40px;
-  border-radius: 4px;
-  font-weight: 600;
-  opacity: 0.7;
-}
-.header__sag--buton:hover {
-  box-shadow: rgb(211, 211, 211) 3px 3px 5px;
-  cursor: pointer;
-  opacity: 1;
-}
-/*! MAIN */
 .main {
-  margin-top: 200px;
-  text-align: center;
+    margin-top: 150px;
+    text-align: center;
 }
+
 .main__logo {
-  width: 272px;
-  height: 92px;
+    width: 272px;
+    height: 92px;
 }
-.main__arama-bar {
-  border: 2px solid #d3d3d3;
-  border-radius: 20px;
-  width: 460px;
-  height: 39px;
-  margin: 20px auto;
+.main__search-bar {
+    width: 460px;
+    height: 38px;
+    padding-top: 3px;
+    border: 1px solid #d3d3d3;
+    border-radius: 25px;
+    margin: 20px auto;
 }
-.main__arama-bar:hover {
-  box-shadow: rgb(211, 211, 211) 2px 2px 10px;
-  cursor: pointer;
-}
-.main__arama-bar--input {
-  width: 380px;
-  height: 30px;
-  font-size: 14px;
-  border: none;
-  outline: none;
-  margin-top: 2px;
+.main__search-bar:hover {
+    box-shadow: rgb(211, 211, 211) 3px 3px 5px 0px;
 }
 
-.main__arama-bar--büyütec {
-  width: 30px;
-  vertical-align: middle;
+.main__search-bar--magnifier {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle; /* vertical-align icin   https://www.w3schools.com/cssref/pr_pos_vertical-align.php*/
 }
 
-.main__arama-bar--mikrofon {
-  width: 15px;
-  vertical-align: middle; /* ?vertical-align icin   https://www.w3schools.com/cssref/pr_pos_vertical-align.php*/
+.main__search-bar--mic {
+    width: 15px;
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
 }
 
-.main__butonlar--sol,
-.main__butonlar--sag {
-  width: 146px;
-  border: none;
-  background-color: #f8f9fa;
-  border-radius: 4px;
-  margin: 30px 0;
-  padding: 0 16px;
-  height: 36px;
+.main__search-bar--input {
+    width: 350px;
+    height: 25px;
+    border: none;
+    outline: none;
+    vertical-align: middle;
+    font-size: 14px;
 }
-.main__butonlar--sol:hover,
-.main__butonlar--sag:hover {
-  border: 1px solid #d3d3d3;
-  box-shadow: rgb(211, 211, 211) 1px 1px 10px;
-  cursor: pointer;
+.main__buttons {
+    height: 36px;
+    padding: 1px 6px;
+    border: none;
+    border-radius: 4px;
+    margin: 10px 3px;
+    background-color: rgb(240, 240, 240);
+    opacity: 0.7;
+    cursor: pointer;
+    /* outline: rgb(66, 153, 225) solid 1px; */
 }
-.main__language a:hover {
-  text-decoration: underline;
+.main__buttons:hover {
+    opacity: 1;
+    border: 1px solid rgb(211, 211, 211);
+    box-shadow: rgb(211, 211, 211) 0.7px 0.7px 0.7px 0px;
+}
+.main__language {
+    margin-top: 1.1rem;
+}
+/* .main__language a {
+    text-decoration: underline;
+} */
+
+.main__language--link {
+    text-decoration: underline;
 }
 
-/*! FOOTER */
+/*? Footer */
 
 .footer {
-  position: fixed;
-  bottom: 0;
-  background-color: #f2f2f2;
-  width: 100%;
-  line-height: 40px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    background-color: #f2f2f2;
+    line-height: 40px;
 }
 
-.footer__turkey {
-  font-size: 14px;
-  padding-left: 20px;
-  border-bottom: 1px solid #dadce0;
+.footer__country {
+    padding-left: 20px;
+    border-bottom: 1px solid #e4e4e4;
 }
-.footer__butonlar--sol {
-  float: left;
+.footer__left {
+    float: left;
+    padding-left: 15px;
 }
-.footer__butonlar--sag {
-  float: right;
+.footer__right {
+    float: right;
+    padding-right: 21px;
 }
-
-/* *Not:BEM, 
+.footer__item {
+    display: inline;
+}
+.footer__link {
+    color: black;
+    padding: 0.5rem;
+    opacity: 0.7;
+    text-decoration: none;
+}
+.footer__link:hover {
+    text-decoration: underline;
+}
+/* ********** BEM(Block Element Modifier) ********** */
+/*  
 CSS sınıflarını yazmak için bir adlandırma kuralıdır. Büyük ölçüde kullanılan bir yaklaşım olup, bakımı kolay ve ölçeklenebilir CSS kodu yazmak için önerilir.
 BEM yöntemi, her CSS sınıfının üç parçaya ayrılması gerektiğini önerir:
+
 Block: Sayfadaki bağımsız bir varlığı temsil eden üst düzey bileşen. Blokların örnekleri arasında başlık, altbilgi, menü, form vb. yer alır.
+
 Element: Bloktaki daha küçük parça, blok olmadan var olamaz. Elementler, sınıf adındaki çift alt çizgi (__) simgesiyle tanımlanır. Örnekler arasında formdaki bir düğme, menüdeki bir liste öğesi vb. yer alır.
+
 Modifier: Bir blok veya elemanın değişkeni. Değiştiriciler, sınıf adındaki çift tire (--) simgesiyle tanımlanır. Örnekler arasında devre dışı bırakılmış bir düğme, seçilmiş bir liste öğesi vb. yer alır.
+
 BEM kullanarak, geliştiriciler daha modüler ve yeniden kullanılabilir CSS kodu yazabilirler. Bu, özgünlük sorunlarını azaltarak kodu zamanla daha kolay bakım ve genişletme açısından daha kolay hale getirebilir. */
